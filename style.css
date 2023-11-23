@@ -3,6 +3,22 @@ CSS style
 Author: Angelica Suarez
 Wed Nov 22 2023
 */
+*{
+	front-size: 12px;
+}
 body{
-	background-color: #fbffd0ff
+	background-color: #fbffd0ff;
+	margin: 20px;
+}
+
+h1{
+	font-size: 2rem;
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+}
+.form{
+	font-size: 15px;
+	color: red;
+	font-weight: bold;
 }
