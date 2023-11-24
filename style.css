@@ -4,22 +4,59 @@ Author: Angelica Suarez
 Wed Nov 22 2023
 */
 *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	front-size: 12px;
+	font-family: Calibri;
+}
+
+p{
+	text-align: center;
 }
 body{
-	background-color: #fbffd0ff;
+	background-color: #f2f0faff;
 	margin: 20px;
+	
+}
+.form-register{
+	border-radius: 4px;
+	width: 400px;
+	padding: 10px;
+	margin: auto;
+	margin-left: 10px;
 }
 
 h1{
 	font-size: 2rem;
-	color: blue;
+	color: black;
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
+.controls{
+	width: 100%;
+	padding: 3px;
+	border-radius: 6px;
+	margin-bottom: 16px;
+	border:	1px solid #dae3eeff;
+}
 .form{
 	font-size: 15px;
-	color: red;
-	font-weight: bold;
+	color: #000000ff;
+}
+
+.buttons{
+	width: 100%;
+	background: #0055ffff;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+}
+
+.foot{
+	text-align: center;
 }

@@ -3,39 +3,180 @@
 
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css"/>
+		<meta name="description" content="Checkout Form"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="style.css">
 		<title>Contact form with CSS</title>
 	</head>
 	
 	
 	<body>
-		<form action="" method="post" >
-		
-		<h1>Contact form</h1>
+
+		<h1><img src="images/cctbima.jpg"></h1>
+		<h1>Checkout form</h1>
 		<p style="font-size: 15px;">
- Contact form with CSS designed by Angelica Suarez Student ID: CT1003769 Each required form group has a validation state that can be triggered by attempting to submit the form without completing it</p>
+		Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
 		
-		<table>
-	<tr>
-		<td><span class="form">Username:</span></td>
-		<td><input type="text" name="username" id="username"></td>
-	</tr>
-	<tr>
-		<td><span class="form">Email:</span></td>
-		<td><input type="email" name="email" id="email"></td>
-	</tr>
-	<tr>
-		<td><span class="form">Password:</span></td>
-		<td><input type="password" name="password" id="password"></td>
-	</tr>
-	<tr>
-		<td colspan="2"><input type="submit" value="Send" name="submit" id="submit"/></td>
-	</tr>
+	<form action="" method="post" class="form-register">
+		<h2>Billing address</h2>
+		
+	<table>
+		<tr>
+			<td><span class="form">Date</span></td>
+		</tr>
+		<tr>
+			<td> <input class="controls" type="datetime" name="date" id="date" placeholder="time"></td>
+		</tr>	
+		<tr>
+			<td><span class="form">First name</span></td>
+			<td><span class="form">Last name</span></td>
+		</tr>
+		<tr>
+			<td> <input class="controls"type="text" name="firstname" id="firstname"></td>
+			<td> <input class="controls" type="text" name="lastname" id="lastname"></td>
+		</tr>
+		<tr>
+			<td><span class="form">Username</span></td>
+		</tr>
+		<tr>
+			<td> <input value="&#64" size="1px;"><input class="controls" type="text" name="username" id="username" placeholder="Username"></td>
+		</tr>
+		<tr>
+			<td><span class="form">Email</span></td>
+		</tr>
+		<tr>
+			<td> <input class="controls" type="email" name="email" id="email" placeholder="you@example.com"></td>
+		</tr>
+		<tr>
+			<td><span class="form">Address</span></td>
+		</tr>
+		<tr>
+			<td> <input class="controls" type="text" name="address" id="address" placeholder="1234 Main St"></td>
+		</tr>
+		<tr>
+			<td><span class="form">Address 2</span> 
+			<output placeholder="(Optional)"></output></td>
+		</tr>
+		<tr>
+			<td> <input class="controls" type="text" name="address2" id="address2" placeholder="Apartment or suite"></td>
+		</tr>
+		<tr>
+			
+			<td><span class="form">Country</span></td>
+			<td><span class="form">State</span></td>
+			<td><span class="form">Zip</span></td>
+				
+			</tr>
+			<td>
+				<div >
+					<select class="controls" >
+						<option class="controls" value="Choose...">Choose...</option>
+						<option class="controls" value="ca">Canada</option>
+						<option class="controls" value="ab">United States</option>
+					</select>
+				</div>
+			</td>					
+				<td>
+					<div>
+						<select class="controls" >
+							<option class="controls" value="Choose...">Choose...</option>
+							<option class="controls" value="bc">BC</option>
+							<option class="controls" value="on">ON</option>
+							<option class="controls" value="ab">AB</option>
+							<option class="controls" value="ny">NY</option>
+							<option class="controls" value="at">AT</option>
+							<option class="controls" value="fl">FL</option>
+						</select>
+					</div>
+				</td>	
+				<td> <input class="controls" type="text" name="zip" id="zip" ></td>
+		
+	
 </table>
+
+<hr>
+<br>
+	<div>
+		<input type="checkbox"></input>	<span class="form">Shipping address is the same as my billing address</span>
+	</div>
+	<div>
+		<input type="checkbox"></input>	<span class="form">Save this information for next time</span>
+	</div>
+<br>
+<hr>	
+	<h2>Payment</h2>
+		<div>
+			<input type="radio">
+			<label for="creditcard"> Credit card</label>
+		</div>
+		<div>
+			<input type="radio">
+			<label for="debitcard"> Debit card</label>
+		</div>	
+		<div>
+			<input type="radio">
+			<label for="paypal"> Paypal</label>
+		</div>
+<br>
+<hr>
+
+
+	<table>
+	<tr>
+		<td><span class="form">Name on card</span></td>
+		<td><span class="form">Credit card number</span></td>
+	</tr>
+	<tr>	
+		<td><input class="controls" type="text" name="nameoncard" id="nameoncard"></td>
+		<td><input class="controls" type="number" name="creditcardnumber" id="creditcardnumber"></td>
+	</tr>
+	<tr>
+		<td>
+			<font size="1px">Full name as displayed on card</font></td>
+	</tr>
+	<tr>
+	<th colspan="2">
+		<table>
+		<tr>
+			<td><span class="form">Expiration</span></td>
+			<td><span class="form">CVV</span></td>
+		</tr>
+		<tr>
+			<td><input class="controls" type="date" name="expiration" id="expiration"></td>
+			<td><input class="controls" type="number" name="cvv" id="cvv"></td>
+		</tr>
+		</table>
+		
+			
+	</th>
+	</tr>
+	</table>
 </form>
 
+<br>
+<hr>
+<br>	
+
+<div>
+	<input class="buttons" type="submit" value="Continue to checkout">
+</div>
+
+
+
+<br>
+<br>
+
 <footer>
-	&copy;Wed Nov 22 2023
+	<div class="foot">
+		&copy;2017-2018 Company Name
+	</div>
+	<div class="foot">
+			<font size="1px" color="#00aaffff">
+				<u>Privaci</u>
+				<u>Terms</u>
+				<u>Support</u>
+			</font>	
+	</div>
 </footer>
 	</body>
 </html>
